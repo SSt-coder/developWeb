@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography – World from above</title>
+    <link rel="stylesheet" href="finished.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="lookbook.html">LOOKBOOK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menuBtn.png" id="menu">
+</div>
+
+
+
+
+
+<!-- LOOKBOOK -->
+
+<section id="lookbook">
+    <div class="title-text">
+        <p>LOOKBOOK</p>
+        <h1>the four elements</h1>
+    </div>
+    <div class="element-box">
+        <div class="single-element">
+            <img src="images/lalalalala7.jpg">
+            </div>
+        <div class="single-element">
+            <img src="images/lalalalala5.jpg">
+        </div>
+        <div class="single-element">
+            <img src="images/lalalalala22.jpg">
+        </div>
+        <div class="single-element">
+            <img src="images/lalalalala10.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala27.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala25.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala24.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala23.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala21.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala19.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala18.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala17.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala15.jpg">
+        </div> 
+        <div class="single-element">
+            <img src="images/lalalalala14.jpg">
+        </div> 
+    </div>
+</section>
+
+
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-210px"
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-210px"){
+        sideNav.style.right = "0";
+    }
+    else{
+        sideNav.style.right = "-210px";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+</script>
+
+</body>
+</html>

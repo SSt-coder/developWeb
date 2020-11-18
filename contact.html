@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography – World from above</title>
+    <link rel="stylesheet" href="finished.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="lookbook.html">LOOKBOOK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menuBtn.png" id="menu">
+</div>
+
+
+
+
+
+<!-- FOOTER -->
+
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>stay connected</h1>
+    </div>
+<div class="footer-row">
+    <div class="footer-center">
+        <h1>get in touch</h1>  
+        <p>52 abc Crescent, vw xyz London, UK</p>
+        <a href="mailto:Mr.%20Sample%20XX%20Surname%20XXXXXXXXX%3Cexample@website.com%3E?subject=contact%20via%20homepage%20%20|%20%20" title="Email to example@website.com" >example@website.com</a>
+        <p>+44 (0) XX XXX XXX XXXX</p>
+    </div>    
+</div>
+
+<div class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-youtube-play"></i>
+</div>
+
+</section>
+
+
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right = "-210px"
+    
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-210px"){
+            sideNav.style.right = "0";
+        }
+        else{
+            sideNav.style.right = "-210px";
+        }
+    }
+    
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+    
+    </script>
+    
+    </body>
+    </html>
+
+
+<!-- 
+
+/* https://fonts.google.com/?category=Sans+Serif&preview.text=earth%20from%20above&preview.size=54&preview.text_type=custom&sidebar.open=true&width=6&selection.family=Lato:ital,wght@0,100;0,300;1,100 */
+
+/* https://fontawesome.com/icons?m=free */
+
+/* bootstrapcdn.com/fontawesome/ */
+
+/* https://github.com/cferdinandi/smooth-scroll */ -->
